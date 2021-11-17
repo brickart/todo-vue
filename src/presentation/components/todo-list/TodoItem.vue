@@ -47,7 +47,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import {Todo} from '../../domain/entities/todo.entity';
+import {Todo} from '@/domain/entities/todo.entity';
 import IconButton from '../IconButton.vue';
 import Checkbox from '../Checkbox.vue';
 

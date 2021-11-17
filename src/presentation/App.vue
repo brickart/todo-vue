@@ -32,8 +32,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Background from '@/components/Background.vue';
-import Wrapper from '@/components/Wrapper.vue';
+import Background from '@/presentation/components/Background.vue';
+import Wrapper from '@/presentation/components/Wrapper.vue';
 
 @Component({
   components: {

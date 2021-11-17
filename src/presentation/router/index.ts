@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import TodoListPage from '@/views/TodoList.vue'
+import TodoListPage from '@/presentation/views/TodoList.vue'
 
 Vue.use(VueRouter)
 
@@ -13,12 +13,12 @@ const routes: Array<RouteConfig> = [
   {
     path: '/todo',
     name: 'About',
-    component: () => import('@/views/Create.vue'),
+    component: () => import('@/presentation/views/Create.vue'),
   },
   {
     path: '/todo/:id',
     name: 'About',
-    component: () => import('@/views/Todo.vue'),
+    component: () => import('@/presentation/views/Todo.vue'),
   },
 ]
 

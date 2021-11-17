@@ -23,10 +23,10 @@ h1 {
 </style>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import EmptyList from '@/components/todo-list/EmptyList.vue';
-import TodoList from '@/components/todo-list/TodoList.vue';
-import Header from '@/components/Header.vue';
-import IconButton from '@/components/IconButton.vue';
+import EmptyList from '@/presentation/components/todo-list/EmptyList.vue';
+import TodoList from '@/presentation/components/todo-list/TodoList.vue';
+import Header from '@/presentation/components/Header.vue';
+import IconButton from '@/presentation/components/IconButton.vue';
 import { mapGetters } from 'vuex';
 
 @Component({

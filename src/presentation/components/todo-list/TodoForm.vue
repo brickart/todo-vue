@@ -60,7 +60,7 @@
 </style>
 <script lang="ts">
 import Vue from 'vue';
-import {Todo} from '../../domain/entities/todo.entity';
+import {Todo} from '@/domain/entities/todo.entity';
 
 export default Vue.extend({
   props: {

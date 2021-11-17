@@ -1,7 +1,7 @@
 <template>
   <div class="empty">
     <div class="empty__content">
-      <img src="@/assets/empty-list.svg" alt="" srcset="">
+      <img src="../../assets/empty-list.svg" alt="" srcset="">
       <p>No list yet<br/>Create your first list</p>
     </div>
   </div>

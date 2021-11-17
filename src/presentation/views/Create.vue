@@ -8,9 +8,9 @@
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import TodoForm from '@/components/todo-list/TodoForm.vue';
-import Header from '@/components/Header.vue';
-import IconButton from '@/components/IconButton.vue';
+import TodoForm from '@/presentation/components/todo-list/TodoForm.vue';
+import Header from '@/presentation/components/Header.vue';
+import IconButton from '@/presentation/components/IconButton.vue';
 
 import { Todo } from '@/domain/entities/todo.entity';
 
