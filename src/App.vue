@@ -1,20 +1,19 @@
 <template>
   <div id="app">
     <Background/>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/todo/1">About</router-link>
-    </div>
-    <router-view/>
+    <Wrapper>
+      <router-view/>
+    </Wrapper>
   </div>
 </template>
 
 <style lang="scss">
 @import "scss";
 #app {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position: relative;
+  display: grid;
 }
 
 #nav {
@@ -34,21 +33,17 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Background from '@/components/Background.vue';
+import Wrapper from '@/components/Wrapper.vue';
 
 @Component({
   components: {
     Background,
+    Wrapper,
   },
+  mounted() {
+    this.$store.dispatch('loadTodoList');
+  }
 })
 export default class App extends Vue {}
-
-/**
- * getTodoList
- * getTodo
- * createTodo
- * editTodo
- * toggleTodo
- * removeTodo
- */
 </script>
 

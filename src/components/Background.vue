@@ -7,8 +7,8 @@
 
 <style lang="scss">
 .bg {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   background: #1F1F1F;
   position: absolute;
   overflow: hidden;
